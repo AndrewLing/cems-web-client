@@ -34,9 +34,27 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="477" column="0" lean-forward="true" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="334">
+              <caret line="1065" column="24" lean-forward="false" selection-start-line="1065" selection-start-column="14" selection-end-line="1065" selection-end-column="24" />
+              <folding>
+                <element signature="e#764#22982#0" expanded="false" />
+                <element signature="e#23066#23739#0" expanded="false" />
+                <element signature="e#23887#24498#0" expanded="false" />
+                <element signature="e#24649#24923#0" expanded="false" />
+                <element signature="e#24956#25091#0" expanded="false" />
+                <element signature="e#25134#25311#0" expanded="false" />
+                <element signature="e#25404#25569#0" expanded="false" />
+                <element signature="e#25662#26785#0" expanded="false" />
+                <element signature="e#26837#27060#0" expanded="false" />
+                <element signature="e#27177#27388#0" expanded="false" />
+                <element signature="e#27483#30593#0" expanded="false" />
+                <element signature="e#30687#31366#0" expanded="false" />
+                <element signature="e#31516#32366#0" expanded="false" />
+                <element signature="e#32507#33340#0" expanded="false" />
+                <element signature="e#33477#34194#0" expanded="false" />
+                <element signature="e#34349#34566#0" expanded="false" />
+                <element signature="e#34608#34837#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,6 +151,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>unCheckUrl</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -288,6 +311,28 @@
             <path>
               <item name="cems-web-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="cems-web-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cems-web-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cems-web-client" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cems-web-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cems-web-client" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cems-web-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cems-web-client" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cems-web-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cems-web-client" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -640,12 +685,12 @@
       <workItem from="1499390470210" duration="13983000" />
       <workItem from="1499650607214" duration="2799000" />
       <workItem from="1500460820280" duration="393000" />
-      <workItem from="1510279056801" duration="132000" />
+      <workItem from="1510279056801" duration="2427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166918000" />
+    <option name="totallyTimeSpent" value="169213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -668,6 +713,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -685,7 +731,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,7 +749,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1075,9 +1120,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="477" column="0" lean-forward="true" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="334">
+          <caret line="1065" column="24" lean-forward="false" selection-start-line="1065" selection-start-column="14" selection-end-line="1065" selection-end-column="24" />
+          <folding>
+            <element signature="e#764#22982#0" expanded="false" />
+            <element signature="e#23066#23739#0" expanded="false" />
+            <element signature="e#23887#24498#0" expanded="false" />
+            <element signature="e#24649#24923#0" expanded="false" />
+            <element signature="e#24956#25091#0" expanded="false" />
+            <element signature="e#25134#25311#0" expanded="false" />
+            <element signature="e#25404#25569#0" expanded="false" />
+            <element signature="e#25662#26785#0" expanded="false" />
+            <element signature="e#26837#27060#0" expanded="false" />
+            <element signature="e#27177#27388#0" expanded="false" />
+            <element signature="e#27483#30593#0" expanded="false" />
+            <element signature="e#30687#31366#0" expanded="false" />
+            <element signature="e#31516#32366#0" expanded="false" />
+            <element signature="e#32507#33340#0" expanded="false" />
+            <element signature="e#33477#34194#0" expanded="false" />
+            <element signature="e#34349#34566#0" expanded="false" />
+            <element signature="e#34608#34837#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
