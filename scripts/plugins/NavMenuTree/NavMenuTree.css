@@ -1,0 +1,132 @@
+.nav-tree {
+}
+
+.nav-tree ul {
+}
+
+.nav-tree ul li {
+    height: 60px;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 60px;
+    list-style: none;
+    color: #B4A691;
+    background: #1a1f24;
+    border: 5px solid #1a1f24;
+    border-right: none;
+    cursor: pointer;
+}
+
+.nav-tree .nav-content {
+    height: 100%;
+    position: relative;
+    padding-left: 18px;
+}
+
+.nav-tree .nav-icon {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(./icons/home.png) 0 0 no-repeat;
+    display: inline-block;
+}
+
+.nav-tree .nav-font {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
+    display: inline-block;
+}
+
+.nav-tree .nav-rcbg-sco {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-tree li:hover,
+.nav-tree li.hover,
+.nav-tree li.selected {
+    color: #ffc240;
+    background: #12171b;
+    border-color: #12171b;
+}
+
+.nav-tree li:hover .nav-icon,
+.nav-tree li.hover .nav-icon,
+.nav-tree li.selected .nav-icon {
+    background-position-x: -22px;
+}
+
+.nav-tree li:hover .nav-rcbg-sco,
+.nav-tree li.hover .nav-rcbg-sco,
+.nav-tree li.selected .nav-rcbg-sco {
+}
+
+.nav-tree li.selected {
+    border-left: 5px solid #ffc240;
+}
+
+/* 2级导航 */
+.SubNav-Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*bottom: 0;*/
+}
+
+.SubNav-Menu .con-rcbg-nav {
+    position: absolute;
+    left: 0;
+    top: 196px;
+    background-color: #1a1f24;
+    z-index: 999;
+    box-shadow: 1px 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.SubNav-Menu ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.SubNav-Menu li {
+    width: 100%;
+    height: 60px;
+    padding: 0 32px;
+    line-height: 60px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 14px;
+    color: #B4A691;
+    cursor: pointer;
+}
+
+.SubNav-Menu li:hover {
+    color: #ffc240;
+    background-color: #12171b;
+}
+
+.SubNav-Menu li:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 18px;
+    height: 18px;
+    background: url(./icons/sub-icon.png) 0 -21px no-repeat;
+    display: block;
+}
+
+.SubNav-Menu li:hover:before {
+    background-position: 0 0;
+}

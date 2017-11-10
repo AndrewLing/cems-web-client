@@ -1,0 +1,129 @@
+<div id="smUserAddUser">
+  <form id='addUserForm'>
+	<table class="addUserTable">
+		<tr>
+			<td align="right" >
+				<span class='i18n' >Msg.modules.sm_user.table.loginName</span>
+			</td>
+			<td align="left" id="loginNameTd" class="tdMust valtd"><input id="loginName" class="inputVal" name=loginName type="text"></td>
+			<td align="right" >
+				<span class='i18n' >Msg.modules.sm_user.table.userName</span>
+			</td>
+			<td align="left" class="tdMust valtd"><input class="inputVal" name="userName" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right" >
+				<span class='i18n' >Msg.modules.sm_user.addUser.password</span>
+			</td>
+			<td align="left" class="tdMust valtd"><input class="inputVal" id="password" name="password" type="password"></td>
+			
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.table.sex</span>
+			</td>
+			<td align="left" class="valtd">
+				<label class='check-label'>
+					<input type='radio' class="inputVal radio-un radio-on" checked name='sex' value='1' >
+					<span class='i18n'>Msg.modules.sm_user.table.boy</span>
+				</label>
+				<label class='check-label'>
+					<input type='radio'  class="inputVal radio-un" name='sex' value='2'>
+					<span class='i18n'>Msg.modules.sm_user.table.girl</span>
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.table.tel</span>
+			</td>
+			<td align="left" class="valtd"><input class="inputVal" name=tel type="text"></td>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.table.mail</span>
+			</td>
+			<td align="left" class="valtd"><input class="inputVal" name="mail" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.table.status</span>
+			</td>
+			<td align="left" class="valtd">
+				<label class='check-label'>
+					<input type='radio' class="inputVal radio-un radio-on" checked name='status' value='ACTIVE' >
+					<span class='i18n'>Msg.modules.sm_user.table.active</span>
+				</label>
+				<label class='check-label'>
+					<input type='radio'  class="inputVal radio-un" name='status' value='LOCKED'>
+					<span class='i18n'>Msg.modules.sm_user.table.locked</span>
+				</label>
+			</td>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.addUser.areas</span>
+			</td>
+			<td align="left" class="valtd">
+				<input type='text' name="domainid" id="domianid" >
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.addUser.occupLevel</span>
+			</td>
+			<td align="left" class="valtd">
+				<select  class="inputVal" name="occupLevel">
+					<option class='i18n' checked= true value='1'>Msg.modules.sm_user.addUser.onelevel</option>
+					<option class='i18n' value='2'>Msg.modules.sm_user.addUser.twolevel</option>
+					<option class='i18n' value='3'>Msg.modules.sm_user.addUser.threelevel</option>
+				</select>
+			</td>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.addUser.description</span>
+			</td>
+			<td align="left" class="valtd">
+				<input type='text'  class="inputVal" name="description"  >
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.sm_user.addUser.avatar</span>
+			</td>
+			<td align="left" class="valtd" colspan="3">
+				<input id="userPicText" disabled=true type="text">
+				<button type="button"data-btntype="submit" class="btn btnThemeA btn-scan">  
+		    	 	<span class="btnL btnS"></span>  
+		    	 	<span class="btnC btnS i18n">Msg.scan</span>  
+		    	 	<span class="btnR btnS"></span>
+	   	 		</button>
+	   	 		<input type="file" id="userPicFile" name="userPicFile" class="upload-input-file"  accept="image/png,image/jpg,image/jpeg,image/bmp"  >
+			</td>
+		</tr>
+		<tr>
+			<td align="left" >
+			</td>
+			<td align=left class="valtd" colspan="3">
+				<p class='imgtip i18n'>Msg.modules.sm_user.avatarLimit</p>
+				<img id="userPicImg" />
+			</td>
+		</tr>
+		<tr>
+			<td align="right" colspan="2">
+				<ul class="userChoose">
+					<li id="chooseRole" class="choose actived mustInput" ><span class='i18n' >Msg.modules.sm_user.addUser.chooseRole</span></li>
+					<li id="chooseResTree" class="choose" ><span class='i18n' >Msg.modules.sm_user.addUser.chooseResource</span></li>
+				</ul>
+			</td>
+			<td align=left colspan="3">
+			</td>
+		</tr>
+		<tr id="chooseRoleTd" class='chooseTd'>
+			<td align="left"  colspan="4">
+				<div id='chooseRoleTable' > </div>
+			</td>
+		</tr>
+		<tr id='chooseResTreeTd' class='chooseTd' hidden=true>
+			<td align="left"  colspan="4">
+				<ul class='ztree' id="chooseTree"></ul>
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>

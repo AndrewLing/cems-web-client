@@ -1,0 +1,408 @@
+.GridTableDiv {
+    cursor: default;
+}
+
+.GridTableDiv table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+
+.GridTableDiv table th,
+.GridTableDiv table td, {
+    box-sizing: border-box;
+}
+
+.GridTableDiv .ExpandBox {
+    /*border-right: 1px solid transparent !important;*/
+}
+
+.GridTableDiv .GridTableTitle {
+    border-spacing: 0;
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+}
+
+.GridTableTitleDiv tr {
+    background-color: #d7e9ef;
+}
+
+.GridTableTitleDiv > tr > td {
+    padding: 0 10px;
+}
+
+.GridTableTitleDiv.SingleTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.GridTableHeaderDiv {
+    word-break: break-word;
+    background-color: #EAEAEA;
+    border: 1px solid #CCCCCC;
+    border-bottom-width: 0;
+    overflow: hidden;
+}
+
+.GridTableHeaderDiv .GridTableHeader {
+    width: 100%;
+    /*width: calc(100% + 0.12em);*/
+    background-color: transparent;
+    /*table-layout: auto;*/
+}
+
+.GridTableHeaderDiv .GridTableHeader .sortBy {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url(../images/sortBy.png) no-repeat center center;
+    cursor: pointer;
+    margin: 8px;
+    vertical-align: middle;
+}
+
+.GridTableHeaderDiv .GridTableHeader .sortBy.asc {
+    background-position: center 5px;
+}
+
+.GridTableHeaderDiv .GridTableHeader .sortBy.desc {
+    background-position: center -5px;
+}
+
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH {
+    background-color: #EAEAEA;
+}
+
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH th {
+    padding: 0;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH th > div {
+    margin: 5px 0;
+}
+
+.GridTableHeaderDiv[singalLineHeaderTable='true'] table {
+    table-layout: fixed;
+}
+
+.GridTableHeaderDiv[singalLineHeaderTable='true'] .GridTableHeader .GridTableHeaderTH th:last-child,
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH th[rowspan]:last-child,
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH th[colspan]:last-child {
+    border-right: none;
+}
+
+.GridTableHeaderDiv .GridTableHeader .GridTableHeaderTH th.lastItem {
+    border-right: none;
+}
+
+.GridTableBodyDiv {
+    border: 1px solid #CCCCCC;
+    border-top: none;
+}
+
+.GridTableBodyDiv .GridTableBody {
+    width: 100%;
+    /*table-layout: fixed;*/
+}
+
+.GridTableBodyDiv.autoHeightBody {
+    border-bottom: 0px solid #CCCCCC;
+}
+
+.GridTableBodyDiv.autoHeightBody .dataline:last-child > td,
+.GridTableBodyDiv.autoHeightBody tr:last-child > td,
+.GridTableBodyDiv.autoHeightBody tr[index]:last-of-type > td {
+    border-bottom: none;
+}
+.GridTableBodyDiv .GridTableBody tr.first {
+    height:1px;
+    font-size:1px;
+    line-height:1px;
+}
+
+.GridTableBodyDiv .GridTableBody tr,
+.GridTableBodyDiv .GridTableBody tr.child:hover {
+    background: #ffffff;
+}
+
+.GridTableBodyDiv .GridTableBody tr.doubleLine {
+    background-color: #F7F7F7;
+}
+
+.GridTableBodyDiv .GridTableBody tr.singleLine {
+    background-color: #FFFFFF;
+}
+
+.GridTableBodyDiv .GridTableBody tr.doubleLine:hover,
+.GridTableBodyDiv .GridTableBody tr.singleLine:hover {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#F7F7F7), to(#fbefd6));
+    background: -moz-linear-gradient(top, #F7F7F7, #fbefd6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F7F7F7, endColorstr=#fbefd6, gradientType=0);
+    background: #F7F7F7 \9;
+}
+.GridTableBodyDiv .GridTableBody tr.doubleLine.intoExpand,
+.GridTableBodyDiv .GridTableBody tr.singleLine.intoExpand {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbefd6), to(#F7F7F7));
+    background: -moz-linear-gradient(top, #fbefd6, #F7F7F7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fbefd6, endColorstr=#F7F7F7, gradientType=0);
+    background: #fbefd6 \9;
+}
+.GridTableBodyDiv .GridTableBody tr.child {
+    display: none;
+}
+.GridTableBodyDiv .GridTableBody tr.child.expanded {
+    display: table-row;
+}
+
+.GridTableBodyDiv .GridTableBody tr.disabled,
+.GridTableBodyDiv .GridTableBody tr.disabled * {
+    color: darkgray;
+    background-color: gainsboro;
+    pointer-events: none;
+}
+
+.GridTableBodyDiv .GridTableBody tr.SelectedBodyLine,
+.GridTableBodyDiv .GridTableBody tr.SelectedBodyLine:hover {
+    background: #f9f3e6;
+}
+
+.GridTableBodyDiv .GridTableBody td {
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+.GridTableBodyDiv .GridTableBody td .BodyExpand {
+    background: url(../images/expand.png) center center no-repeat;
+    cursor: pointer;
+}
+.GridTableBodyDiv .GridTableBody td .BodyExpand.Disabled {
+    background: url(../images/showPro.png) center center no-repeat;
+    pointer-events: none;
+}
+.GridTableBodyDiv .GridTableBody td .BodyExpand.expanded {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.GridTableBodyDiv .GridTableBody td:last-child {
+    border-right: none;
+}
+.GridTableBodyDiv .GridTableBody tr:last-child > td,
+.GridTableBodyDiv .GridTableBody tr[index]:last-of-type > td {
+    border-bottom: none;
+} 
+.GridTableExpandBody tr:last-child > td,
+.GridTableExpandBody tr[index]:last-of-type > td {
+	 border-bottom: none;
+}
+ul.selectedShowBox {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 5px auto;
+}
+
+.selectedShowBox > li {
+    list-style: none;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 2px 5px;
+    float: left;
+    position: relative;
+    margin: 8px 10px 5px 0;
+    width: 128px;
+    font-size: 9pt;
+    box-sizing: border-box;
+}
+
+.selectedShowBox > li:hover {
+    background: #D3D6DB;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.selectedShowBox > li .t {
+    width: 100%;
+    height: 18px;
+    font-size: 9pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.selectedShowBox > li .close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    line-height: 8px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1pt;
+    color: white;
+    background: rgba(0, 126, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.PageToolBar {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+}
+
+.PageToolBar .GridTableBarBody:before,
+.PageToolBar .GridTableBarBody:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.PageToolBar .plabel {
+    padding: 0 3px;
+}
+
+.PageToolBar .pbutton_on {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.PageToolBar .pbutton_dis {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    pointer-events: none;
+}
+
+.PageToolBar .pbutton_on:hover {
+    background-color: rgb(255, 194, 64);
+	color:#FFFFFF;
+}
+
+.PageToolBar input, .PageToolBar select, .PageToolBar textarea {
+    margin: 0 !important;
+    font-size: 12px !important;
+}
+
+.PageToolBar input, .PageToolBar select {
+    height: 26px;
+    line-height: 20px;
+}
+
+.PageToolBar .pbutton_first {
+    text-align: center;
+    width: 53px;
+    height: 26px;
+    background: url('../images/first-button.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_first:hover {
+    background: url('../images/first-button-hover.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_previous {
+    background: url('../images/previous-button.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_previous:hover {
+    background: url('../images/previous-button-hover.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_next {
+    background: url('../images/next-button.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_next:hover {
+    background: url('../images/next-button-hover.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_last {
+    background: url('../images/last-button.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_last:hover {
+    background: url('../images/last-button-hover.png') center center no-repeat;
+}
+
+.PageToolBar .pbutton_jumpTo {
+    text-align: center;
+    line-height: 2;
+    /*background: url('../images/go-button.png') center center / 100% 100% no-repeat;*/
+}
+
+.PageToolBar .pbutton_jumpTo:hover {
+    /*background: url('../images/go-button-hover.png') center center / 100% 100% no-repeat;*/
+}
+/* 修改checkbox 样式*/
+.GridTableHeaderTH input[type='checkbox'],.singleLine input[type='checkbox'],.doubleLine input[type='checkbox'] {
+	margin: 8.5px !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(/images/main/button/select.png);
+    width: 20px;
+    height: 20px;
+    background-position: -1px -27px;
+    -webkit-appearance: none;
+    padding: 0;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.SelectedHeaderLine input[type='checkbox'],.SelectedBodyLine input[type='checkbox'] {
+	margin: 8.5px !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(/images/main/button/select.png);
+    width: 20px;
+    height: 20px;
+    background-position: -26px -27px;
+    -webkit-appearance: none;
+    padding: 0;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+/* 修改radio 样式*/
+.GridTableHeaderTH input[type='radio'],.singleLine input[type='radio'],.doubleLine input[type='radio'] {
+	margin: 8.5px !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(/images/main/button/select.png);
+    width: 20px;
+    height: 20px;
+     background-position: -1px -2px;
+    -webkit-appearance: none;
+    padding: 0;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.SelectedHeaderLine input[type='radio'],.SelectedBodyLine input[type='radio'] {
+	margin: 8.5px !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(/images/main/button/select.png);
+    width: 20px;
+    height: 20px;
+    background-position: -26px -2px;
+    -webkit-appearance: none;
+    padding: 0;
+    vertical-align: bottom;
+    cursor: pointer;
+}   

@@ -1,0 +1,70 @@
+<div id="dpManAddStation">
+ <form id="addStationForm">
+	<table class="addStationTable">
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.dp_man.table.stationName</span>
+			</td>
+			<td align="left" class="tdMust valtd"><input maxlength="64" class="inputVal" name="name" type="text"></td>
+			<td align="right">
+				<span class='i18n' >Msg.modules.dp_man.table.stationArea</span>
+			</td>
+			<td align="left" class="tdMust valtd"><input class="inputVal" name="administrativeAreaId" id="stationArea" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.dp_man.table.stationAddr</span>
+			</td>
+			<td align="left" class='valtd'><input maxlength="64" class="inputVal" name="address" type="text"></td>
+			<td align="right">
+				<span class='i18n' >Msg.modules.dp_man.table.stationOwner</span>
+			</td>
+			<td align="left" class='valtd'><input maxlength="128" class="inputVal" name="stationOwner" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right">
+				<span class='i18n' >Msg.modules.dp_man.addStation.onlinebtime</span>
+			</td>
+			<td align="left" class='valtd'><input name="businesStartHours" class="inputVal busines wdateIcon" id="busines_begin" type="text" /></td>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.addStation.onlineetime</span></td>
+			<td align="left" class='valtd'><input name="businesEndHours" class="inputVal busines wdateIcon" id="busines_end" type="text"/> </td>
+		</tr>
+		<tr>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.addStation.longitude</span></td>
+			<td align="left" class="tdMust valtd"><input maxlength="15" class="inputVal" name="longitude" type="text"></td>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.addStation.latitude</span></td>
+			<td align="left" class="tdMust valtd"><input maxlength="15" class="inputVal" name="latitude" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.table.powerRate</span></td>
+			<td align="left" class='tdMust valtd'><input class="inputVal" name="powerRate" type="text"></td>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.table.parkMoney</span></td>
+			<td align="left" class='valtd'><input class="inputVal" name="parkMoney" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right"><span class='i18n' >Msg.modules.dp_man.table.serveMoney</span></td>
+			<td align="left" class='tdMust valtd' colspan="1"><input class="inputVal" name="serveMoney" type="text"></td>
+		</tr>
+		<tr>
+			<td align="right"> <span class='i18n' >Msg.modules.dp_man.table.stationPic</span> </td>
+			<td align="left" class='valtd'><input id="stationPicText" disabled=true type="text"></td>
+			<td align="left" class='valtd' colspan="2">
+				<button type="button"data-btntype="submit" class="btn btnThemeA btn-scan">  
+		    	 	<span class="btnL btnS"></span>  
+		    	 	<span class="btnC btnS i18n">Msg.scan</span>  
+		    	 	<span class="btnR btnS"></span>
+	   	 		</button>
+	   	 		<input type="file" id="stationPicFile" name="stationPicFile" class="upload-input-file"  accept="image/png,image/jpg,image/jpeg,image/bmp"  >
+	   	 	</td>
+		</tr>
+		<tr>
+			<td align="left" >
+			</td>
+			<td align=left colspan="3">
+				<p class='imgtip'></p>
+				<img id="stationPicImg" />
+			</td>
+		</tr>
+	</table>
+</form>
+</div>

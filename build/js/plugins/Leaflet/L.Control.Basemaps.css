@@ -1,0 +1,23 @@
+.basemaps {
+    padding: 0;
+}
+
+.leaflet-right .basemaps {
+    right: 0;
+}
+
+.leaflet-bottom .basemaps {
+    bottom: 0;
+}
+
+.basemaps img {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #FFF;
+    margin: 0 2px;
+    border-radius: 50%;
+    border-color: orange;
+    box-shadow: 0 0 10px #000;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJwbHVnaW5zL0xlYWZsZXQvTC5Db250cm9sLkJhc2VtYXBzLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuYmFzZW1hcHMge1xuICAgIHBhZGRpbmc6IDA7XG59XG5cbi5sZWFmbGV0LXJpZ2h0IC5iYXNlbWFwcyB7XG4gICAgcmlnaHQ6IDA7XG59XG5cbi5sZWFmbGV0LWJvdHRvbSAuYmFzZW1hcHMge1xuICAgIGJvdHRvbTogMDtcbn1cblxuLmJhc2VtYXBzIGltZyB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjRkZGO1xuICAgIG1hcmdpbjogMCAycHg7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGJvcmRlci1jb2xvcjogb3JhbmdlO1xuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICMwMDA7XG59Il0sImZpbGUiOiJwbHVnaW5zL0xlYWZsZXQvTC5Db250cm9sLkJhc2VtYXBzLmNzcyJ9 */

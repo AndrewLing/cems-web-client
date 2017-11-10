@@ -1,0 +1,369 @@
+@import (once) "../../base";
+
+/**************************** 普屏界面样式 ***************************/
+
+#cems_main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &.fold {
+    .left {
+      width: 60px;
+
+      .logo {
+        height: 60px;
+        figure {
+          padding: 0;
+          img {
+            width: 42px;
+            height: 42px;
+          }
+          .top-logo-title-box {
+            display: none;
+          }
+        }
+      }
+    }
+    .main {
+      margin-left: 60px;
+    }
+  }
+
+  .inner {
+    min-width: 780px;
+    margin: 0 auto;
+    .body-title{
+    	 display: none;
+    }
+  }
+
+  .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: #1A1F24;
+    box-shadow: 0 0 20px #0F0F0F;
+    vertical-align: top;
+    .transition(width .2s);
+    overflow: hidden;
+    z-index: 2;
+
+    .logo {
+      height: 150px;
+      #gradient > .horizontal(#ffa840, #ffc64c, 0%, 80%);
+      border: 1px solid #ffb746;
+      box-shadow: 0 0 20px #0f0f0f;
+      figure {
+        height: 100%;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        img {
+          width: 60px;
+          height: 60px;
+          margin: 5px;
+          cursor: pointer;
+        }
+        .top-logo-title-box {
+          cursor: pointer;
+          display: block;
+          .transition(width 1s);
+
+          .title {
+            font-size: 14px;
+            color: #fff;
+            margin-left: 3px;
+            display: block;
+            line-height: 17px;
+            letter-spacing: 0.08em;
+          }
+          .subTitle {
+            font-size: 1.4em;
+            // letter-spacing: 0;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+
+    #main_nav {
+      margin-top: 40px;
+    }
+  }
+
+  .main {
+    .transition(width .2s);
+    height: 100%;
+    margin-left: 220px;
+
+    .top {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: #23292F;
+      box-shadow: 0 0 20px #0f0f0f;
+      z-index: 1;
+
+      nav {
+        float: right;
+        line-height: 60px;
+        margin-right: 60px;
+
+        a {
+          position: relative;
+          display: inline-block;
+          margin: 0 8px;
+          line-height: 60px;
+          color: #B0A38F;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:before {
+            content: '';
+            position: relative;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            background: url(/images/main/top-icons.png) 0 0 no-repeat;
+            display: inline-block;
+          }
+
+          .arrow {
+            position: absolute;
+            top: 28px;
+            right: 8px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #a59986;
+          }
+
+          &:hover {
+            color: #FFC240;
+            text-decoration: none;
+
+            &:before {
+              background-position-x: -22px;
+            }
+
+            .arrow {
+              border-top-color: #ffc64c;
+            }
+          }
+
+          &.top-btn-userInfo {
+            margin-right: 32px;
+
+            &:before {
+              background-position-y: 0;
+            }
+
+            .userName {
+              padding-right: 28px;
+            }
+          }
+
+          &.top-btn-inlineHelp {
+
+            &:before {
+              background-position-y: -20px;
+            }
+          }
+
+          &.top-btn-aboutMe {
+
+            &:before {
+              background-position-y: -41px;
+            }
+          }
+        }
+
+        .userSetBox {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          background-color: #23292F;
+          border: 1px solid #232323;
+          box-shadow: 0 0 20px #232323;
+          z-index: 1;
+          display: none;
+		  min-width: 100px;
+          ul {
+
+            li {
+              color: #cccccc;
+              line-height: 45px;
+              padding: 0 10px;
+
+              &:hover {
+                color: #ffc240;
+                background: #12171b;
+                border-color: #12171b;
+              }
+            }
+          }
+        }
+      }
+      .folder {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 38px;
+        height: 38px;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 4px;
+        background: url(/images/main/toExpand.png) 7px 7px no-repeat;
+        &:hover {
+          .rgba(20, 20, 20, 0.68);
+          background-position: 7px -23px;
+        }
+      }
+    }
+
+    .body {
+      width: 100%;
+      height: 100%;
+      padding-top: 60px;
+      z-index: 0;
+      overflow-y: auto;
+      overflow-x:hidden;
+
+      .cems-module {
+        clear: both;
+        &:after, &:before {
+          content: '';
+          clear: both;
+          display: table;
+        }
+      }
+      .cems-menu-title{
+          height: 55px;
+		  line-height: 55px;
+		  padding: 0px 40px 10px 40px;
+		  background: #fbfbfb;
+		//  margin-top: 20px;
+		  border-bottom: 2px solid #DDDDDD;
+		  .to-jump{
+		     color: #F8B117;
+    		 cursor: pointer;
+		  }
+      }
+      .chargeData {
+        margin: 20px 40px 10px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        .chargeDataList {
+          width: 100%;
+          border-radius: 10px;
+          background: #FBFBFB;
+         // box-shadow: -3px 3px 15px 0 #0f0f0f;
+          margin-left: 0;
+          h2 {
+            border: 0px solid transparent;
+            border-left-width: 5px;
+            border-left-color: #FFC240;
+            line-height: 50px;
+            background: #FBFBFB;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 10px;
+            color: #333333;
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: 1px solid #DDDDDD;
+          }
+          .more {
+            float: right;
+            right: 20px;
+            font-weight: 600;
+          }
+          .litle {
+            font-weight: 500;
+            font-size: 12px;
+            margin-left: 10px;
+          }
+          .dzgh_txt {
+            position: absolute;
+            top: 50px;
+            right: 80px;
+            font-size: 14px;
+            line-height: 31px;
+            color: #B4A691;
+          }
+          .content{
+          	 width: 100%;
+   			 margin: auto;
+          }
+        }
+      }
+      .toolbar {
+        border-bottom: 1px #79febc solid;
+        padding: 5px 0;
+        margin: 0 auto 10px;
+        &:after, &:before {
+          content: '';
+          clear: both;
+          display: table;
+        }
+      }
+
+      .layout-bar {
+        width: 100%;
+        position: relative;
+        display: block;
+        margin: 0 auto 10px;
+        &.left {
+          float: left;
+          text-align: left;
+        }
+        &.right {
+          float: right;
+          text-align: right;
+        }
+        &.inline {
+          width: auto;
+          display: inline-table;
+          vertical-align: middle;
+          margin: 0;
+        }
+        &:after, &:before {
+          content: '';
+          clear: both;
+        }
+      }
+
+      .contentbox {
+        clear: both;
+        position: relative;
+        display: block;
+        margin: 0 auto 10px;
+      }
+
+    }
+  }
+}
+.jump{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     background: #FFA941 50% 50% no-repeat;
+     border-radius: 50%;
+     right: 10px;
+     bottom: 10px;
+     background-image: url(/images/main/jump.png);
+     cursor: pointer;
+     &:hover, &:focus, &.focus {
+       opacity: 0.7;
+     }
+     z-index:999;
+  }

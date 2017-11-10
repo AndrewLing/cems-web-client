@@ -1,0 +1,96 @@
+.hidden {
+	display: none !important;
+}
+.easy-tabs-area {
+    width: 100%;
+    clear: both;
+}
+.easy-tabs-area .easy-tabs-titles {
+    line-height: 35px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #E2E2E2;
+    margin-left: 2%;
+}
+.easy-tabs-area .navbar {
+    margin: 0 auto;
+    border-bottom: 1px solid #CCC;
+}
+.easy-tabs-area .navbar li a,
+.easy-tabs-area .navbar li a:link {
+    color: #000;
+}
+.easy-tabs-area .navbar .active {
+    font-weight: bold;
+    border-bottom: 3px solid #00c97b;
+}
+.easy-tabs-area .easy-tabs-titles:before,
+.easy-tabs-area .easy-tabs-titles:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.easy-tabs-area .easy-tabs-title {
+    float: left;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+.easy-tabs-area .easy-tabs-selected {
+    border-bottom: 3px solid #ffc240;
+    font-weight: bold;
+}
+.easy-tabs-area .easy-tabs-bodys {
+    padding: 10px 0;
+    clear: both;
+    display: block;
+}
+.easy-tabs-area .easy-tabs-bodys:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.easy-tabs-area .easy-tabs-titles-v {
+    width: 42px;
+    position: absolute;
+    left: -41px;
+}
+
+.easy-tabs-area .easy-tabs-title-v {
+	cursor: pointer;
+    margin: 0;
+    font-size: 16px;
+    padding: 150px 12px;
+    height: 428px;
+    /* background-color: rgba(204,204,204, 1); */
+    background: url(../images/tv-btn.png) no-repeat center;
+    color: #FFF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+}
+
+.easy-tabs-area .easy-tabs-selected-v {
+	background: url(../images/tv-btn-selected.png) no-repeat center;
+    font-weight: bold;
+	/* background-color: rgba(52,204,153, 1); */
+}
+
+.easy-tabs-area .easy-tabs-title-v.omis-task {
+    background: url(../images/task-list.png) no-repeat center;
+}
+.easy-tabs-area .easy-tabs-title-v.omis-station {
+    background: url(../images/plant-list.png) no-repeat center;
+}
+
+.easy-tabs-area .easy-tabs-selected-v.omis-task {
+    background: url(../images/task-list_on.png) no-repeat center;
+}
+.easy-tabs-area .easy-tabs-selected-v.omis-station {
+    background: url(../images/plant-list_on.png) no-repeat center;
+}
+
+.easy-tabs-area .easy-tabs-bodys-v {
+    border: 1px solid #E1E1E8;
+    padding: 10px;
+    min-height: 856px;
+}

@@ -1,0 +1,49 @@
+<div id="smRoleAddRole">
+    <form id="addRoleForm">
+		<table class="addRoleTable">
+			<tr>
+				<td align="right">
+					<span class='i18n' >Msg.modules.sm_role.table.roleName</span>
+				</td>
+				<td align="left" class="tdMust valtd"><input class="inputVal" name=roleName type="text"></td>
+				<td align="right">
+					<span class='i18n' >Msg.modules.sm_role.table.discription</span>
+				</td>
+				<td align="left" class='valtd'><input class="inputVal" name="discription" type="text"></td>
+			</tr>
+			<tr>
+				<td align="right">
+					<span class='i18n' >Msg.modules.sm_role.table.area</span>
+				</td>
+				<td align="left" class='valtd'><input class="inputVal" id="domain_role" name="domainid" type="text"></td>
+				
+				<td align="right">
+					<span class='i18n' >Msg.modules.sm_role.table.status</span>
+				</td>
+				<td align="left" class='valtd'>
+					<label class='check-label'>
+						<input type='radio' class="inputVal radio-un radio-on" checked name='status' value='ACTIVE' >
+						<span class='i18n'>Msg.modules.sm_role.table.active</span>
+					</label>
+					<label class='check-label'>
+						<input type='radio'  class="inputVal radio-un" name='status' value='LOCKED'>
+						<span class='i18n'>Msg.modules.sm_role.table.locked</span>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" >
+					<span class='i18n' >Msg.modules.sm_role.addRole.roleSrc</span>
+				</td>
+			</tr>
+			<tr>
+			 	<td align="right" ></td>
+				<td align="right" colspan="3">
+					<div class="srcTreeDiv" >
+						<ul class="ztree" id='srcTree'></ul> 
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>

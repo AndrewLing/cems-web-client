@@ -1,0 +1,96 @@
+<div id="dz_addPile" class="cems-module" style="clear: both;">
+	<div id="addPileDiv">
+		<!-- 导航栏 -->
+		<div id="navigationBar">
+			<span id="pileInfo" name="dzManCreatePile" class="title i18n checked">Msg.modules.dz_man.pileInfo</span>
+			<span id="rateSet" name="dzManRateSet" class="title i18n">Msg.modules.dz_man.rateSet</span>
+		</div>
+
+		<div id="dzManCreatePile">
+			<form id="dzMan_form">
+				<input type="hidden" name="id" />
+				<table class="createPileTable">
+					<tr>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.serialNumber</td>
+						<td align="left" class="valcls tdMust"><input type="text"
+							name="serialNumber"></td>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.deviceType</td>
+						<td align="left" class="valcls tdMust"><select name="deviceType">
+								<option value="1" class="i18n">Msg.modules.dz_man.zlkc</option>
+								<option value="2" class="i18n">Msg.modules.dz_man.zlmc</option>
+								<option value="3" class="i18n">Msg.modules.dz_man.jlkc</option>
+								<option value="4" class="i18n">Msg.modules.dz_man.jlmc</option>
+								<!--  <option value="5">交直流混合</option> -->
+						</select></td>
+					</tr>
+					<tr>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.gunNumber</td>
+						<td align="left" class="valcls tdMust"><input type="text"
+							name="gunsNum"></td>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.station</td>
+						<td align="left" class="valcls tdMust"><input type="text"
+							name="stationId" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.businessType</td>
+						<td align="left" class="valcls "><select name="businessType"
+							style="width: 192px;">
+								<option value="1" class="i18n">Msg.modules.dz_man.privateNotOpen</option>
+								<option value="2" class="i18n">Msg.modules.dz_man.privateOpen</option>
+								<option value="3" class="i18n">Msg.modules.dz_man.publicFree</option>
+								<option value="4" class="i18n">Msg.modules.dz_man.publicMoney</option>
+						</select></td>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.dy</td>
+						<td align="left" class="valcls"><input type="text"
+							name="ratedVoltage"></td>
+					</tr>
+					<tr>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.power</td>
+						<td align="left" class="valcls"><input type="text"
+							name="powerRating"></td>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.longtinue</td>
+						<td align="left" class="valcls"><input type="text"
+							name="longitude"></td>
+					</tr>
+					<tr>
+						<td align="right" class="keycls i18n">Msg.modules.dz_man.latiue</td>
+						<td align="left" class="valcls"><input type="text"
+							name="latitude"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="dzManRateSet" style="display: none">
+			<div>
+				<label id="isDefaultPrice" class="i18n text" data-i18n-type="text">Msg.modules.dz_man.addPile.defaultPrice</label>
+				<input type="checkbox" id="useDefaultPrice"
+					style="margin-left: 34%;" value="on">
+			</div>
+			<div id="timeSubsection" class="timeTxt">
+				<label class="i18n text" id="timeDivideSetting"
+					data-i18n-type="text">Msg.modules.dz_man.addPile.subsectionSetting</label>
+			   <form id="dzMan_add_form">
+				<div id="timeDivide">
+					<div class="priceDivaddIn">
+						<div class="priceHeader">
+							<div class="headerContent" id="priceTag0">
+								<input class="selectTime i18n" name="startTime" id="startTime" type="text" value="" readonly="readonly"  placeholder="开始时间" /> 
+								<span> ~ </span>
+								<input class="selectTime i18n" name="endTime"  id ="endTime" type="text" value="" readonly="readonly"  placeholder="结束时间" /><label class="i18n text"  data-i18n-type="text" name="price">Msg.modules.dz_man.addPile.price +  Msg.unit.chargeMoneyUnit</label>
+								<span> : </span>
+								<input class="money i18n" name="price" type="text" value="" placeholder="电价" /><label class="i18n text"  data-i18n-type="text" name="price">Msg.modules.dz_man.addPile.service + Msg.unit.chargeMoneyUnit</label>
+								<span> : </span>
+								<input class="money i18n" name="service" type="text" value="" placeholder="服务费" />
+								<b class="closeTag" style="display: block;" id="close"> x </b>
+							</div>
+						</div>
+						<div class="priceContent" style="text-align: center;">
+							<div class="btn modal-btn" id="addBtn">+</div>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

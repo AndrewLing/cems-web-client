@@ -1,0 +1,24 @@
+ /* IE 6-8 fallback colors */
+.marker-cluster-small {
+	background-color: rgb(181, 226, 140);
+	}
+.marker-cluster-small div {
+	background-color: rgb(110, 204, 57);
+	}
+
+.marker-cluster-medium {
+	background-color: rgb(241, 211, 87);
+	}
+.marker-cluster-medium div {
+	background-color: rgb(240, 194, 12);
+	}
+
+.marker-cluster-large {
+	background-color: rgb(253, 156, 115);
+	}
+.marker-cluster-large div {
+	background-color: rgb(241, 128, 23);
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJwbHVnaW5zL0xlYWZsZXQvTWFya2VyQ2x1c3Rlci5EZWZhdWx0LmllLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIgLyogSUUgNi04IGZhbGxiYWNrIGNvbG9ycyAqL1xyXG4ubWFya2VyLWNsdXN0ZXItc21hbGwge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigxODEsIDIyNiwgMTQwKTtcclxuXHR9XHJcbi5tYXJrZXItY2x1c3Rlci1zbWFsbCBkaXYge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigxMTAsIDIwNCwgNTcpO1xyXG5cdH1cclxuXHJcbi5tYXJrZXItY2x1c3Rlci1tZWRpdW0ge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigyNDEsIDIxMSwgODcpO1xyXG5cdH1cclxuLm1hcmtlci1jbHVzdGVyLW1lZGl1bSBkaXYge1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigyNDAsIDE5NCwgMTIpO1xyXG5cdH1cclxuXHJcbi5tYXJrZXItY2x1c3Rlci1sYXJnZSB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI1MywgMTU2LCAxMTUpO1xyXG5cdH1cclxuLm1hcmtlci1jbHVzdGVyLWxhcmdlIGRpdiB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI0MSwgMTI4LCAyMyk7XHJcbn1cclxuXHJcbiJdLCJmaWxlIjoicGx1Z2lucy9MZWFmbGV0L01hcmtlckNsdXN0ZXIuRGVmYXVsdC5pZS5jc3MifQ== */

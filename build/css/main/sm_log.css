@@ -1,0 +1,11 @@
+#sm_log #sm_secutityLog .logTable {
+  top: -28px;
+  min-height: 400px;
+  }
+#sm_log #sm_secutityLog .validate_toolbar {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNtX2xvZy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztDQUNaO0FBQ0Q7RUFDRSxtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtDQUNsQiIsImZpbGUiOiJtYWluL3NtX2xvZy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjc21fbG9nICNzbV9zZWN1dGl0eUxvZyAubG9nVGFibGUge1xuICBtaW4taGVpZ2h0OiA0MDBweDtcbiAgdG9wOiAtMjhweDtcbn1cbiNzbV9sb2cgI3NtX3NlY3V0aXR5TG9nIC52YWxpZGF0ZV90b29sYmFyIHtcbiAgcGFkZGluZy1ib3R0b206IDIlO1xuICBwYWRkaW5nLXRvcDogMSU7XG4gIHBhZGRpbmctbGVmdDogMSU7XG59XG4iXX0= */

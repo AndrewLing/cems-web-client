@@ -1,0 +1,12 @@
+.Wdate {
+    padding-right: 36px !important;
+    border: 1px solid #999;
+    box-sizing: content-box;
+    background: #fff url(./datePicker2.png) center right no-repeat;
+}
+
+.WdateFmtErr {
+    font-weight: bold;
+    color: red;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJwbHVnaW5zL0RhdGVQaWNrZXIvc2tpbi9XZGF0ZVBpY2tlci5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLldkYXRlIHtcclxuICAgIHBhZGRpbmctcmlnaHQ6IDM2cHggIWltcG9ydGFudDtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICM5OTk7XHJcbiAgICBib3gtc2l6aW5nOiBjb250ZW50LWJveDtcclxuICAgIGJhY2tncm91bmQ6ICNmZmYgdXJsKC4vZGF0ZVBpY2tlcjIucG5nKSBjZW50ZXIgcmlnaHQgbm8tcmVwZWF0O1xyXG59XHJcblxyXG4uV2RhdGVGbXRFcnIge1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBjb2xvcjogcmVkO1xyXG59Il0sImZpbGUiOiJwbHVnaW5zL0RhdGVQaWNrZXIvc2tpbi9XZGF0ZVBpY2tlci5jc3MifQ== */
