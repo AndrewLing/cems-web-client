@@ -1,8 +1,0 @@
-.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
-	-webkit-transition: -webkit-transform 0.25s ease-out, opacity 0.25s ease-in;
-	-moz-transition: -moz-transform 0.25s ease-out, opacity 0.25s ease-in;
-	-o-transition: -o-transform 0.25s ease-out, opacity 0.25s ease-in;
-	transition: transform 0.25s ease-out, opacity 0.25s ease-in;
-	}
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJwbHVnaW5zL0xlYWZsZXQvTWFya2VyQ2x1c3Rlci5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmxlYWZsZXQtY2x1c3Rlci1hbmltIC5sZWFmbGV0LW1hcmtlci1pY29uLCAubGVhZmxldC1jbHVzdGVyLWFuaW0gLmxlYWZsZXQtbWFya2VyLXNoYWRvdyB7XHJcblx0LXdlYmtpdC10cmFuc2l0aW9uOiAtd2Via2l0LXRyYW5zZm9ybSAwLjI1cyBlYXNlLW91dCwgb3BhY2l0eSAwLjI1cyBlYXNlLWluO1xyXG5cdC1tb3otdHJhbnNpdGlvbjogLW1vei10cmFuc2Zvcm0gMC4yNXMgZWFzZS1vdXQsIG9wYWNpdHkgMC4yNXMgZWFzZS1pbjtcclxuXHQtby10cmFuc2l0aW9uOiAtby10cmFuc2Zvcm0gMC4yNXMgZWFzZS1vdXQsIG9wYWNpdHkgMC4yNXMgZWFzZS1pbjtcclxuXHR0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4yNXMgZWFzZS1vdXQsIG9wYWNpdHkgMC4yNXMgZWFzZS1pbjtcclxuXHR9XHJcbiJdLCJmaWxlIjoicGx1Z2lucy9MZWFmbGV0L01hcmtlckNsdXN0ZXIuY3NzIn0= */
