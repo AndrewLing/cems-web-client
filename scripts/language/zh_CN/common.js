@@ -1,5 +1,4 @@
 define({
-	all:'全部',
     "systemName": "充电桩运营管理系统",
     "subSystemName": "iCleanPower",
     
@@ -130,7 +129,6 @@ define({
         ],
         "relogin":'请重新登录',
         "forcerelogin":"当前用户已在别处登录，请重新登录",
-        "noRight":'没有权限',
         "notExists":'资源不存在',
         "userInfoUpdate":'用户信息已修改'
     },
